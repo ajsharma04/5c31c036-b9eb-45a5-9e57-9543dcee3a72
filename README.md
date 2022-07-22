@@ -1,2 +1,16 @@
-# 5c31c036-b9eb-45a5-9e57-9543dcee3a72
-code test
+### Pre-requisites:
+* Need Docker Desktop installed on your PC
+
+## How to run the project
+
+Install
+
+    docker-compose run install
+ 
+ Test
+
+	docker-compose run test
+ 
+ Run local test
+ 
+	\runtest.ps1

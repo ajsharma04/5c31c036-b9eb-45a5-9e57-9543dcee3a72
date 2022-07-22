@@ -1,0 +1,16 @@
+version: '2.1'
+services:
+    install: 
+      image: node:12      
+      working_dir: /usr/app
+      command: sh -c "npm install --quiet"
+      volumes:
+        - "./:/usr/app"
+
+    test:
+      depends_on: [ install ]
+      image: node:12 
+      working_dir: /usr/app
+      command: sh -c "npm test"
+      volumes:
+        - "./:/usr/app"
