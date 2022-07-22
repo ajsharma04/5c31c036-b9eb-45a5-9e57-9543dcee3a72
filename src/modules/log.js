@@ -2,6 +2,9 @@ var log = {
     info: function (info) { 
         console.log('Info: ' + info);
     },
+    debug: function (debug) { 
+        console.log(debug);
+    },
     warning:function (warning) { 
         console.log('Warning: ' + warning);
     },
